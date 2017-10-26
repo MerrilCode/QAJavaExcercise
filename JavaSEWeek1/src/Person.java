@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Person {
 
     private int age;
@@ -19,9 +21,20 @@ public class Person {
     public String getJobTitle(){
         return this.jobTitle;
     }
+
     public String toString(int age, String name, String jobTitle){
         return "Age: " + age + "Name: " + name + "Job Title: " + jobTitle;
     }
+
+    public   String searchPersonObject(ArrayList<Person> people, String name){
+        for (Person p: people){
+            if(p.getName() == name){
+                return name;
+            }
+        }
+        return "Name not found";
+    }
+
 
 }
 

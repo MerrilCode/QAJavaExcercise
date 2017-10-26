@@ -1,11 +1,5 @@
 public class BlackJack {
 
-    public static void main(String[] args) {
-
-        System.out.println(closestTo21(23, 22));
-
-
-    }
 
     public static int closestTo21(int inputIntOne, int inputIntTwo) {
 

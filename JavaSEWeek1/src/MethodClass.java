@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class MethodClass {
 
     public static void main(String[] args) {
@@ -30,8 +32,39 @@ public class MethodClass {
      for(int i: arrayOfInts){
          System.out.print(i*10 + ", ");
      }
+     BlackJack b = new BlackJack();
+        System.out.println(b.closestTo21(23, 22));
+
+        IsTooHot hot = new IsTooHot();
+        UniqueSum uniqueSum = new UniqueSum();
+        System.out.println(uniqueSum.uniqueSumMethod(2,2,2));
+        System.out.println(hot.isTooHotMethod(110,true));
+
+        Person pOne = new Person(27,"Merril", "Trainee");
+        Person pTwo = new Person (23,"Sachin","Trainee");
+        Person pThree = new Person(22,"Martyn", "Trainee");
+
+        ArrayList<Person> personObjects = new ArrayList<Person>();
+        personObjects.add(pOne);
+        personObjects.add(pTwo);
+        personObjects.add(pThree);
+
+        for(Person i: personObjects){
+            System.out.println(i.getName());
+
+        }
+
+        System.out.println(pOne.searchPersonObject(personObjects,"Merril"));
+
+
+
+
 
     }
+
+
+
+
     public static void stringMethod(String s) {
         System.out.println(s);
     }
